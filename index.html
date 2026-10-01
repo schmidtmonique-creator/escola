@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Perfil acessível de um estudante de Desenvolvimento de Sistemas">
+    <title>Meu Perfil Acessível</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="container">
+            <h1>Meu Perfil Acessível</h1>
+            <p>Conheça um pouco sobre este estudante.</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="perfil" aria-labelledby="titulo-perfil">
+            <div class="avatar-container">
+                <img
+                    src="https://api.dicebear.com/9.x/adventurer/svg?seed=Joao"
+                    alt="Avatar do estudante"
+                    class="avatar"
+                >
+            </div>
+
+            <div class="perfil-conteudo">
+                <h2 id="titulo-perfil">Olá! Eu sou o João 👋</h2>
+
+                <p>
+                    Sou estudante e gosto de aprender coisas novas,
+                    principalmente sobre tecnologia e programação.
+                </p>
+
+                <a href="#informacoes" class="botao">
+                    📋 Ver informações completas
+                </a>
+            </div>
+        </section>
+
+        <section id="informacoes" aria-labelledby="titulo-informacoes">
+            <h2 id="titulo-informacoes">Informações do estudante</h2>
+
+            <div class="cards">
+
+                <article class="card">
+                    <h3>👤 Nome</h3>
+                    <p>João</p>
+                </article>
+
+                <article class="card">
+                    <h3>🎂 Idade</h3>
+                    <p>16 anos</p>
+                </article>
+
+                <article class="card">
+                    <h3>💻 Curso</h3>
+                    <p>Técnico em Desenvolvimento de Sistemas</p>
+                </article>
+
+                <article class="card">
+                    <h3>⭐ Interesses</h3>
+                    <p>Tecnologia, jogos e música</p>
+                </article>
+
+                <article class="card">
+                    <h3>🎯 Objetivo</h3>
+                    <p>Aprender programação</p>
+                </article>
+
+            </div>
+        </section>
+
+        <section aria-labelledby="titulo-gosto">
+            <h2 id="titulo-gosto">Eu gosto de...</h2>
+
+            <ul class="lista-gostos">
+                <li>🎮 Jogos</li>
+                <li>🎵 Música</li>
+                <li>💻 Computadores</li>
+                <li>⚽ Esportes</li>
+                <li>📚 Tecnologia</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="titulo-aprendizado">
+            <h2 id="titulo-aprendizado">Como eu aprendo melhor?</h2>
+
+            <div class="aprendizado">
+                <div class="aprendizado-item">
+                    <span>📖</span>
+                    <p>As instruções são claras.</p>
+                </div>
+
+                <div class="aprendizado-item">
+                    <span>🗂️</span>
+                    <p>As atividades estão organizadas.</p>
+                </div>
+
+                <div class="aprendizado-item">
+                    <span>💡</span>
+                    <p>Tenho exemplos para entender o conteúdo.</p>
+                </div>
+
+                <div class="aprendizado-item">
+                    <span>✅</span>
+                    <p>Sei exatamente o que preciso fazer.</p>
+                </div>
+
+                <div class="aprendizado-item">
+                    <span>📝</span>
+                    <p>As informações estão divididas em etapas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section aria-labelledby="titulo-rotina">
+            <h2 id="titulo-rotina">Minha rotina</h2>
+
+            <div class="tabela-container">
+                <table>
+                    <caption>Rotina diária do estudante</caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Horário</th>
+                            <th scope="col">Atividade</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>07:00</td>
+                            <td>Acordar</td>
+                        </tr>
+
+                        <tr>
+                            <td>08:00</td>
+                            <td>Escola</td>
+                        </tr>
+
+                        <tr>
+                            <td>12:00</td>
+                            <td>Almoço</td>
+                        </tr>
+
+                        <tr>
+                            <td>13:30</td>
+                            <td>Estudos</td>
+                        </tr>
+
+                        <tr>
+                            <td>18:00</td>
+                            <td>Lazer</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2026 - Meu Perfil Acessível</p>
+        <p>Projeto desenvolvido com HTML5 e CSS3.</p>
+    </footer>
+
+</body>
+</html>
