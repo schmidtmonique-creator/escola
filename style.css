@@ -1,0 +1,319 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.cabecalho {
+    background-color: #173b6c;
+    color: #ffffff;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.cabecalho h1 {
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+}
+
+.cabecalho p {
+    font-size: 1.1rem;
+}
+
+/* =========================
+   SEÇÕES
+========================= */
+
+main {
+    padding: 40px 0;
+}
+
+section {
+    margin-bottom: 45px;
+}
+
+section > h2 {
+    color: #173b6c;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   CARTÃO DE PERFIL
+========================= */
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.avatar-container {
+    flex-shrink: 0;
+}
+
+.avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #2f80ed;
+    background-color: #eaf2ff;
+}
+
+.perfil-conteudo h2 {
+    color: #173b6c;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.perfil-conteudo p {
+    margin-bottom: 20px;
+}
+
+/* =========================
+   BOTÃO
+========================= */
+
+.botao {
+    display: inline-block;
+    background-color: #1769aa;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.botao:hover {
+    background-color: #0d4f82;
+}
+
+.botao:focus {
+    outline: 3px solid #f5c542;
+    outline-offset: 3px;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-left: 5px solid #2f80ed;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.card h3 {
+    color: #173b6c;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+/* =========================
+   LISTA "EU GOSTO"
+========================= */
+
+.lista-gostos {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.lista-gostos li {
+    background-color: #ffffff;
+    padding: 18px 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+/* =========================
+   COMO EU APRENDO
+========================= */
+
+.aprendizado {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.aprendizado-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #ffffff;
+    padding: 18px;
+    border-radius: 10px;
+    border: 1px solid #d9e2ef;
+}
+
+.aprendizado-item span {
+    font-size: 1.5rem;
+}
+
+/* =========================
+   TABELA
+========================= */
+
+.tabela-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+caption {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #374151;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #d9e2ef;
+}
+
+th {
+    background-color: #173b6c;
+    color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f1f5f9;
+}
+
+tbody tr:hover {
+    background-color: #e5efff;
+}
+
+/* =========================
+   RODAPÉ
+========================= */
+
+.rodape {
+    background-color: #173b6c;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+.rodape p {
+    margin: 5px;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 800px) {
+
+    .cabecalho h1 {
+        font-size: 1.9rem;
+    }
+
+    .perfil {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .lista-gostos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .aprendizado {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .cabecalho {
+        padding: 35px 15px;
+    }
+
+    .cabecalho h1 {
+        font-size: 1.6rem;
+    }
+
+    .perfil {
+        padding: 25px 20px;
+    }
+
+    .avatar {
+        width: 140px;
+        height: 140px;
+    }
+
+    section > h2 {
+        font-size: 1.5rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .lista-gostos {
+        grid-template-columns: 1fr;
+    }
+
+    th,
+    td {
+        padding: 12px;
+    }
+}
